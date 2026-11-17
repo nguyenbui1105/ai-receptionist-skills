@@ -14,5 +14,7 @@ Each folder is a human- and agent-readable **SKILL.md**. Skills are capabilities
 | follow-up-messaging | Caller opts into a text | Approved concise message |
 | compliance-and-privacy | Every call, especially recording | Minimal data, notices, consent |
 | conversation-quality | Throughout and wrap-up | Clear, concise, recoverable interaction |
+| voice-cloning | Business needs a licensed cloned voice | Verified consent, scoped approval and revocation |
+| real-time-voice-runtime | Telephony adapter enabled | Speech streaming, interruptions and fallbacks |
 
 Skills are **portable policy documents**, not a vendor-specific executable configuration.

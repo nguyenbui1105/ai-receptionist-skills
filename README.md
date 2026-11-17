@@ -13,7 +13,7 @@
 [![CI](https://github.com/nguyenbui1105/ai-receptionist-skills/actions/workflows/test.yml/badge.svg)](https://github.com/nguyenbui1105/ai-receptionist-skills/actions/workflows/test.yml)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![MIT License](https://img.shields.io/badge/license-MIT-22C55E.svg)](LICENSE)
-[![Agent Skills](https://img.shields.io/badge/Agent_Skills-10-8B5CF6)](skills/)
+[![Agent Skills](https://img.shields.io/badge/Agent_Skills-12-8B5CF6)](skills/)
 [![Status](https://img.shields.io/badge/status-foundation_MVP-F59E0B)](docs/PRODUCTION.md)
 
 **[Explore Skills](skills/README.md)** · **[Run Demo](#-try-the-offline-demo)** · **[Architecture](docs/ARCHITECTURE.md)** · **[Roadmap](#-roadmap)** · **[Contribute](CONTRIBUTING.md)**
@@ -78,6 +78,8 @@ Each skill lives in its own `SKILL.md` and documents **triggers → inputs → p
 | [💬 Follow-up messaging](skills/follow-up-messaging/SKILL.md) | Authorized transactional messaging |
 | [🛡️ Compliance & privacy](skills/compliance-and-privacy/SKILL.md) | Recording, disclosure, minimization, consent |
 | [🎙️ Conversation quality](skills/conversation-quality/SKILL.md) | Interruption, clarity, recovery, measurement |
+| [🗣️ Voice cloning](skills/voice-cloning/SKILL.md) | Consent-based voice licensing, verification and revocation |
+| [🔊 Real-time voice runtime](skills/real-time-voice-runtime/SKILL.md) | Low-latency speech architecture, barge-in and fallbacks |
 
 **[Browse all skill contracts →](skills/README.md)**
 
@@ -105,7 +107,7 @@ Caller: Yes.
 Booking: DEMO-XXXXXXXX
 ```
 
-Explore [caller journeys](docs/DEMO.md) and [failure scenarios](docs/EVALUATION.md).
+Explore [caller journeys](docs/DEMO.md), [voice-stack design](docs/VOICE_STACK.md), [voice authorization demo](docs/VOICE_DEMO.md), and [failure scenarios](docs/EVALUATION.md).
 
 ## 🏗️ What's actually included?
 
@@ -114,7 +116,7 @@ ai-receptionist-skills/
 ├── assets/                      # Repository identity & visual assets
 ├── businesses/                  # Fictional business configuration
 ├── receptionist/                # Offline Python reference orchestration
-├── skills/                      # 10 portable SKILL.md playbooks
+├── skills/                      # 12 portable SKILL.md playbooks
 ├── tests/                       # Standard-library unit tests
 ├── docs/
 │   ├── ARCHITECTURE.md
@@ -152,10 +154,12 @@ See [security guidance](SECURITY.md) and the [production checklist](docs/PRODUCT
 
 ## 🗺️ Roadmap
 
-- [x] 10 documented, reusable AI receptionist skills
+- [x] 12 documented, reusable AI receptionist skills
 - [x] Business profile and deterministic offline booking demo
 - [x] Automated unit tests and test-first architecture
 - [x] Research, diagrams, evaluation criteria and deployment guidance
+- [x] Consent-gated voice selection policy + 11 dedicated tests
+- [x] Voice-cloning and realtime-runtime skill contracts (design only)
 - [ ] Signed webhook/telephony adapter with streaming speech
 - [ ] Transactional calendar adapter + multi-caller concurrency tests
 - [ ] Real transfer, approved SMS and CRM integrations
